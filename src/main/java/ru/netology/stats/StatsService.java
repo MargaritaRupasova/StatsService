@@ -3,13 +3,13 @@ package ru.netology.stats;
 public class StatsService {
     public int amountOfAllSales(int[] sales) {    //сумма всех продаж
 
-    int amount = 0;  //переменная для суммы продажи
-    for (int sale : sales) {
-        amount = amount + sale;
-    }
+        int amount = 0;  //переменная для суммы продажи
+        for (int sale : sales) {
+            amount = amount + sale;
+        }
 
-    return amount;
-}
+        return amount;
+    }
 
     public double midSales(int[] sales) {   //средняя сумма продаж в месяц
         double middle = amountOfAllSales(sales);
@@ -54,7 +54,7 @@ public class StatsService {
                 month = month + 1;
             }
         }
-    return month;
+        return month;
     }
 
     public int SalesMaxMid(int[] sales) {
